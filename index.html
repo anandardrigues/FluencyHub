@@ -1,94 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Fluency Hub</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" id="home">
+  
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white sticky-top">
+    <div class="container"> <!-- container-fluid - removing fluid we have more space-->
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> <!-- or in the center mx-auto-->
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Fluency Hub</title>
-  </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar" id="home">
-    <!--NAV BAR-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">AND</a>
-        <!--<img src="" alt="">-->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-3">Master English—No More Guesswork, Just Results!</h1>
+          <p>Empower yourself with strategies that turn challenges into achievements.</p>
         </div>
       </div>
-    </nav>
+      <div class="row">
+        <form action="#" class="col-lg-6 mx-auto">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Your E-Mail Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-brand" type="button" id="button-addon2">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    <!--Hero-->
-    <section id="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1>Transform Your Health, Elevate Your Mind</h1>
-            <p>
-              Unlock the power of integrated health practices tailored to your
-              unique journey.
-            </p>
+  <!--services-->
+  <section id="services">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 section-intro">
+          <h1>Our services</h1>
+          <p>Explore the tools and resources we offer to help you master English.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-bookmark-3-fill"></i>
+            </div>
+            <h5>Personalized Learning Plans</h5>
+            <p>Offers a tailored curriculum that adapts to the user's current level and learning preferences, making the learning process more efficient and effective.</p>
+            <a href="#" class="custom-link">Read More</a>
           </div>
         </div>
-        <div class="row">
-          <form action="#">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Recipient's username"
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-              />
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
-              >
-                Button
-              </button>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-progress-7-line"></i>
             </div>
-          </form>
+            <h5>Interactive Speaking Practice</h5>
+            <p>Provides live speaking sessions with native speakers or language experts to improve conversational skills and build confidence.</p>
+            <a href="#" class="custom-link">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-git-repository-fill"></i>
+            </div>
+            <h5>Grammar Workshops</h5>
+            <p>ocuses on in-depth grammar instruction through workshops that help learners understand and apply complex rules.</p>
+            <a href="#" class="custom-link">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-base-station-fill"></i>
+            </div>
+            <h5>Immersion Programs</h5>
+            <p>Online linguistic immersion experiences, simulating everyday scenarios.</p>
+            <a href="#" class="custom-link">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-team-fill"></i>
+            </div>
+            <h5>Mentorship Sessions</h5>
+            <p>Personalized guidance to set and achieve English learning goals.</p>
+            <a href="#" class="custom-link">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-progress-8-line"></i>
+            </div>
+            <h5>Progress Tracking</h5>
+            <p>Detailed performance reports with goals and recommendations for improvement.</p>
+            <a href="#" class="custom-link">Read More</a>
+          </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+
+  </section>
+
+  <!--CTA-->
+  <div id="cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Step Up Your Skills, Speak with Confidence!</h2>
+          <p>Unlock the power of language and open doors to new opportunities.</p>
+        </div>
+        <div class="col-auto">
+          <a href="#" class="btn btn-brand">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--TESTIMONIALS-->
+  <section id="Testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 section-intro">
+          <h1> Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente dolore magnam ea odio debitis?</p>
+        </div>
+      </div>
+      <section>
+        <div class="owl-carousel owl-theme">
+          <div class="item"><h4>1</h4></div>
+          <div class="item"><h4>2</h4></div>
+          <div class="item"><h4>3</h4></div>
+          <div class="item"><h4>4</h4></div>
+          <div class="item"><h4>5</h4></div>
+          <div class="item"><h4>6</h4></div>
+          <div class="item"><h4>7</h4></div>
+          <div class="item"><h4>8</h4></div>
+          <div class="item"><h4>9</h4></div>
+          <div class="item"><h4>10</h4></div>
+          <div class="item"><h4>11</h4></div>
+          <div class="item"><h4>12</h4></div>
+        </div>
+      </section>
+      
+      <!-- Scripts -->
+      <script src="./assets/javascript/jquery.js"></script> <!-- Carregue o jQuery primeiro -->
+      <script src="./assets/javascript/owl.carousel.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="./assets/javascript/app.js"></script>
+      
+</body>
 </html>
